@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Meriva</title>
+</head>
+<body>
+    <center>
+        <fieldset >
+Imie <input id="1"><br>
+Nazwisko <input id="2"><br>
+<input type="button" id="3" value="Wyslij" onclick="an()"><br>
+<br><br>
+<h2>Zdarzenia myszy</h2>
+<p id="a"></p>
+<p id="b"></p>
+<p id="c"></p>
+
+        </fieldset>
+    </center>
+    <script>
+        function an(){
+            var t=document.getElementById("1").value
+            var o=document.getElementById("2").value
+            var q=document.getElementById("3").value
+
+            document.getElementById("a").innerHTML=(t)
+            document.getElementById("b").innerHTML=(o)
+            document.getElementById("c").innerHTML=(q)
+        }
+    </script>
+</body>
+</html>

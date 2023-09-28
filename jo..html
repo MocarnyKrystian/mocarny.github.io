@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="jo.js"></script>	
+    <p>Pory roku:
+        <b id="blok">lato</b>
+        
+        </p>
+        <input type="button" onclick="zmien_tekst()" value="zmien tekst">
+        <script>
+                function zmien_tekst(){
+                    if(document.getElementById("blok").innerHTML=='lato'){
+                        document.getElementById("blok").innerHTML='jesien';
+                    }
+                    else if(document.getElementById("blok").innerHTML=='jesien'){
+                        document.getElementById("blok").innerHTML='zima';
+                    }
+                    else if(document.getElementById("blok").innerHTML=='zima'){
+                        document.getElementById("blok").innerHTML='wiosna';
+                    }
+                    else if(document.getElementById("blok").innerHTML=='wiosna'){
+                        document.getElementById("blok").innerHTML='lato';
+
+            }
+        }
+
+        </script>
+
+    </body>
+</html>
